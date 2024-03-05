@@ -23,7 +23,7 @@ function dateToTimestamp(date) {
 }
 
 /**
- * Returns the time in hh:mm:ss format from the received date.
+ *Returns the time in hh:mm:ss format from the received  date.
  *
  * @param {Date} date - date.
  * @return {string} time in hh:mm:ss format.
@@ -39,6 +39,11 @@ function getTime(date) {
   const seconds = `${data.getSeconds() < 10 ? `0${data.getSeconds()}` : data.getSeconds()}`;
   return `${hours}:${minutes}:${seconds}`;
 }
+// or
+// function getTime(date) {
+//   const data = date.toString();
+//   return data.split(' ')[4];
+// }
 
 /**
  * Returns the name of the day of the week for a given date string.
