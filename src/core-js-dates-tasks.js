@@ -287,7 +287,6 @@ function getWorkSchedule(period, countWorkDays, countOffDays) {
     date = `${dateStr.slice(3, 5)}-${dateStr.slice(0, 2)}${dateStr.slice(5)}`;
     return date;
   }
-
   const start = new Date(changeDDwithMM(period.start));
   const end = new Date(changeDDwithMM(period.end));
   const workDays = countWorkDays;
